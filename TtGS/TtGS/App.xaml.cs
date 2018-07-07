@@ -13,7 +13,7 @@ namespace TtGS
 		{
 			InitializeComponent();
 
-			MainPage = new TtGS.MainPage();
+			MainPage = new MainPage();
 		}
 
 		protected override void OnStart ()

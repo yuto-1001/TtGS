@@ -1,16 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
-                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                  xmlns:local="clr-namespace:MyApp;assembly=MyApp"
-                  x:Class="MyApp.MasterDetailPage">
-    <MasterDetailPage.Master>
-        <local:MyMasterPage />
-    </MasterDetailPage.Master>
-    <MasterDetailPage.Detail>
-        <NavigationPage>
-            <x:Arguments>
-                <local:MainPage />
-            </x:Arguments>
-        </NavigationPage>
-    </MasterDetailPage.Detail>
-</MasterDetailPage>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TtGS.MainPage">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="CountdownTimer">
+        <Label x:Name="Time"
+               Text="カウントダウンタイマー"
+               VerticalOptions="Center"
+               />
+        <Button Text="Start"
+                Clicked="Button_Clicked"
+                HeightRequest="80"
+                WidthRequest="200"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+    </ContentPage>
+    <ContentPage Title="Tab 2" />
+    <ContentPage Title="Tab 3" />
+</TabbedPage>
